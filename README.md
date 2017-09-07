@@ -1,2 +1,3 @@
 # playlist_selection
 Create an algorithm in Python that will randomly select a song to practice on my bass guitar from a list of songs.
+I play bass guitar in a band called Sofa Locusts. We have wide genre of songs we're in the process of learning from - blues, funk, punk, reggae, classic rock, jam band, R&B. When I practice, I tend to keep choosing the same songs to practice and not branching out to explore and practice all the songs in our play list. To that end, I decided to create an algorithm in Python that would randomly choose a song for me to practice from the playlist each time I practice. This will allow me to get a well-rounded exposure to all the songs and genres that we are learning, which will make me a better bass player and in turn will improve the band. 
