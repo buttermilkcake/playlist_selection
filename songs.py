@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+091417_changes
+HEAD
+master
 # Create dictionaries instead for the different gentres with each song paired
 # with the key it is in. Create user input 'What genre do you want to play?'
 # Don't allow person to request same genre 2 times in a row, have a message if
@@ -32,7 +34,7 @@ songs.append('Burnin\' Sky')
 rand_song = random.choice(songs)
 print(rand_song)
 
-=======
+091417_changes
 import random # imports the random module
 
 songs = []
@@ -62,4 +64,5 @@ songs.append('Burnin\' Sky')
 rand_song = random.choice(songs)
 print(rand_song)
 
->>>>>>> origin/master
+origin/master
+master
