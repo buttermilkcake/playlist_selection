@@ -1,68 +1,32 @@
-091417_changes
-HEAD
-master
-# Create dictionaries instead for the different gentres with each song paired
-# with the key it is in. Create user input 'What genre do you want to play?'
-# Don't allow person to request same genre 2 times in a row, have a message if
-# they try 'I'm sorry, you need to choose a different genre this time.'
 import random # imports the random module
 
-songs = []
-songs.append('Hey Joe')
-songs.append('Cinnamin Girl')
-songs.append('Heroes')
-songs.append('Julie\'s Funky Jam')
-songs.append('Songs for My Father')
-songs.append('Brain Stew')
-songs.append('Tubthumping')
-songs.append('The Mighty Quinn')
-songs.append('Gimme Some Lovin\'')
-songs.append('Train Kept A-Rollin\' Yardbirds Version')
-songs.append('Should I Stay or Should I Go')
-songs.append('Windy')
-songs.append('Sloopy')
-songs.append('I\'m a Man Spencer Davis Group')
-songs.append('Terrible Thing Booker T and the MG\'s')
-songs.append('Brain Stew')
-songs.append('London Calling')
-songs.append('Tied to the Whipping Post')
-songs.append('Manic Depression')
-songs.append('Hoodoo Stew')
-songs.append('Mississippi Queen')
-songs.append('Burnin\' Sky')
+blues = {'Julie\'s r&b Turn Blues' : 'G', 'Julie\'s Funky Jam Blues' : 'G',
+         'Little Red Rooster' : 'G', 'Basic 12-bar Blues' : 'Any'}
 
-rand_song = random.choice(songs)
-print(rand_song)
+current = {'Sweet Jane' : 'D', 'Mighty Quinn' : 'G',
+           'Heroes' : 'D', 'Hey Joe' : 'C', 'Gimme Some Lovin\'' : 'E',
+           'Basic Blues Jam' : 'Any', 'Walk on the Wildside' : 'D or C',
+           'Smokestack Lightning' : 'C', 'Secret Agent Man' : 'G'}
 
-091417_changes
-import random # imports the random module
+punk = {'Guns of Brixton' : 'F#', 'I Wanna be Sedated' : 'E',
+        'Should I Stay or Should I Go?' : 'E', 'T.V. Eye' : 'G'}
 
-songs = []
-songs.append('Hey Joe')
-songs.append('Cinnamin Girl')
-songs.append('Heroes')
-songs.append('Julie\'s Funky Jam')
-songs.append('Songs for My Father')
-songs.append('Brain Stew')
-songs.append('Tubthumping')
-songs.append('The Mighty Quinn')
-songs.append('Gimme Some Lovin\'')
-songs.append('Train Kept A-Rollin\' Yardbirds Version')
-songs.append('Should I Stay or Should I Go')
-songs.append('Windy')
-songs.append('Sloopy')
-songs.append('I\'m a Man Spencer Davis Group')
-songs.append('Terrible Thing Booker T and the MG\'s')
-songs.append('Brain Stew')
-songs.append('London Calling')
-songs.append('Tied to the Whipping Post')
-songs.append('Manic Depression')
-songs.append('Hoodoo Stew')
-songs.append('Mississippi Queen')
-songs.append('Burnin\' Sky')
+reggae = {'No Woman No Cry' : 'C', 'Redemption Song' : 'G',
+          'Bankrobber Dub' : 'G'}
 
-rand_song = random.choice(songs)
-print(rand_song)
+rand_song_blues = random.choice(list(blues.items()))
+rand_song_current = random.choice(list(current.items()))
+rand_song_punk = random.choice(list(punk.items()))
+rand_song_reggae = random.choice(list(reggae.items()))
 
-origin/master
-master
+
+prompt = "\nWould you like to play?"
+prompt += "\nEnter 'quit' to end. "
+
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    
+    if message != 'quit':
+        print(message)
+        print(rand_song_current)
