@@ -5,7 +5,7 @@ blues = ['Julie\'s r&b Turn Blues, Key of G',
          'Little Red Rooster, Key of G', 'Basic 12-bar Blues, Any Key']
 
 current = ['Sweet Jane, Key of D', 'Mighty Quinn, Key of G', 'Heroes, Key of D',
-           'Hey Joe, Key of C', 'Gimme Some Lovin\', Ke of E',
+           'Hey Joe, Key of C', 'Gimme Some Lovin\', Key of E',
            'Walk on the Wildside, Key of D or C',
            'Smokestack Lightning, Key of C', 'Secret Agent Man, Key of G']
 
