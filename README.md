@@ -13,3 +13,5 @@ Sept 19, 2017 - YEE-HAW!!!! I have improved upon my design even in a sleep depri
 Sept 25, 2017 - Today is the day I fixed my glitch. I'm very happy about finishing strong on a Monday! In sept25_songs_copy.py I put in a break to exit the loop, so if the participant does not wish to play, they can enter quit and the program really ends. Now that I know it is working, I can fully expand all of my song genre dictionaries, save them as a separate module and import them into my program. I've decided not to limit how many times I can choose the same genre. 
 
 I'm going to keep all iterations of this program in this repository to show how I worked through this challenge.
+
+April 30, 2018 - I realized that previous versions of this song generator did not truly randomly choose from the lists of songs for each genre. If you chose the same genre several times in the row, it kept choosing the same song for you. I finally fingured out how to make the program truly choose songs at random in a particular genre. The version that works is called working_genre_song_generator.py 
